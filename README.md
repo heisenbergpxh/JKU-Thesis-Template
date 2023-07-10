@@ -1,2 +1,2 @@
 # JKU-Thesis-Template
-Unofficial template for Bachelor, Master or PhD Thesis
+Unofficial JKU template for Bachelor, Master or PhD Thesis
