@@ -1,0 +1,69 @@
+\documentclass[a4paper, fleqn, fontsize=12pt, headsepline, oneside]{JKUthesis}
+\raggedbottom
+%----------------------------------------------%
+
+\type{2}
+\name{Future Smart Guy}
+\title{Sick title}
+\institute{Institute of ...}
+\degree{Master of ...}
+\study{Your program}
+\firstreferee{Prof. Super Smart}
+\town{Your home town}
+\signature{signature}
+\date{\today}
+
+%----------------------------------------------%
+
+\input{config.tex}
+\begin{document}
+\pagenumbering{roman}
+\maketitle
+\cleardoublepage
+%%
+\pagestyle{empty}
+\printdedication{To my beloved whatever}
+\cleardoublepage
+%%
+\printdeclaration
+\cleardoublepage
+\clearpage
+%%
+\setcounter{page}{1}
+%\printabstract
+%%
+\pagestyle{plain}
+\tableofcontents
+\cleardoublepage
+%%
+\pagestyle{plain}
+\printnomenclature[1.5cm]
+%%
+\listoffigures
+%%
+%\listofschemes
+%%
+\listoftables
+\cleardoublepage
+%
+%----------------------------------------------%
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%% Nomenclature example: (See readme.md for instructions)
+\nomenclature[A,01]{$c_i$}{Temperature of $i$}
+\nomenclature[B,01]{$T_i$}{Temperature of $i$}
+\nomenclature[C]{MALDI}{Matrix-assisted laser desorption/ionization}
+
+\blinddocument
+
+% Test bib entry
+\nocite{*}
+%----------------------------------------------%
+
+\printbibliography
+%%
+\printappendices
+\end{document}

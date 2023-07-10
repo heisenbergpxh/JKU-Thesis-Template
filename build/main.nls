@@ -1,0 +1,10 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{$c_i$}]\begingroup Temperature of $i$\nomeqref {0.0}\nompageref{1}
+\nomgroup{B}
+  \item [{$T_i$}]\begingroup Temperature of $i$\nomeqref {0.0}\nompageref{1}
+\nomgroup{C}
+  \item [{MALDI}]\begingroup Matrix-assisted laser desorption/ionization\nomeqref {0.0}\nompageref{1}
+
+\end{thenomenclature}

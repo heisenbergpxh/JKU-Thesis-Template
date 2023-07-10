@@ -1,0 +1,143 @@
+\usepackage[utf8]{inputenc}
+
+\usepackage[left = 3cm, right = 2cm, bottom = 2.5cm, top = 2.5cm]{geometry}
+\setlength{\parindent}{0cm}
+
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{tocloft}
+\setlength{\cftfignumwidth}{3em}
+
+\KOMAoptions{listof=totoc, bibliography=totoc}
+
+\usepackage[backend=biber, style=chem-angew, articletitle=true, abbreviate=false, doi=false]{biblatex}
+
+% CTO reference style:
+\renewbibmacro*{date}{\printtext[parens]{\printtext[date]{\printdate}}}
+\DeclareFieldFormat[article]{title}{#1}
+\DeclareFieldFormat[unpublished]{title}{#1}
+\DeclareFieldFormat[article]{volume}{#1}
+
+\AtEveryBibitem{
+	\clearfield{issn}
+	\clearfield{doi}
+	
+	\ifentrytype{online}{}{
+		\clearfield{url}
+	}
+}
+
+\addbibresource{references.bib}
+
+\usepackage{blindtext}
+\usepackage{amssymb}
+\usepackage{chemfig}
+
+\setchemfig{
+  atom sep=30pt,
+  bond style={line width=0.6pt},
+  cram width=2.0pt,
+  bond join=true
+}
+\renewcommand*\printatom[1]{\small\ensuremath{\mathsf{#1}}}
+
+\usepackage{chemformula}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage[autostyle]{csquotes}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{threeparttable}
+\usepackage{scrlayer-scrpage}
+\usepackage{diagbox}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{textgreek}
+\usepackage{subcaption}
+\usepackage{longtable}
+\usepackage[super]{nth}
+
+\usetikzlibrary{
+	pgfplots.dateplot,
+	pgfplots.groupplots,
+	matrix,
+	external,
+	spy,
+	backgrounds
+}
+
+\pgfplotsset{compat=1.9}
+\usepgfplotslibrary{fillbetween}
+
+\usepackage{booktabs}
+\usepackage{xfrac}
+\usepackage{multirow}
+
+\usepackage{caption}
+\captionsetup{font=small, skip=5pt, singlelinecheck=true, labelfont=bf} % justification=RaggedRight,
+
+
+\usepackage[intoc]{nomencl}
+\makenomenclature
+
+%\renewcommand{\nomname}{List of Symbols}
+%\renewcommand{\nompreamble}{The next list describes several symbols that will be later used within the body of the document}
+\renewcommand{\nompreamble}{\protect\pagestyle{plain}}
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+	\item[\bfseries
+	\ifstrequal{#1}{A}{Simulation Constants and Parameters}{%
+	\ifstrequal{#1}{B}{Physical Constants and Parameters}{%
+	\ifstrequal{#1}{C}{Abbreviations}{}}}%
+	]}
+
+\newcommand{\nomunit}[1]{%
+	\renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+
+%----------------------------------------------%
+
+\newcommand{\ddiff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+
+\mathcode`\*="8000
+{\catcode`\*\active\gdef*{\cdot}}
+
+\newcommand{\meanconc}[1]{$\overline{\left[\text{#1}\right]}$}
+
+\sisetup{detect-all}
+
+\cfoot*{}
+\ofoot*{\pagemark}
+
+\clubpenalty=9996
+\widowpenalty=9999
+\brokenpenalty=4991
+\predisplaypenalty=10000
+\postdisplaypenalty=1549
+\displaywidowpenalty=1602
+
+%% colors#ffffff018BD9
+\definecolor{qubblue}{HTML}{0085d0}
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+\definecolor{mycolor6}{rgb}{0.30100,0.74500,0.93300}%
+\definecolor{mycolor7}{rgb}{0.63500,0.07800,0.18400}%
+
+%% fonts
+\newcommand{\texttb}[1]{\texttt{\color{qubblue}#1}}
+\setkomafont{labelinglabel}{\ttfamily\color{qubblue}}
+
+%% theorems
+\usepackage{ntheorem}
+\theorembodyfont{\upshape}
+\newtheorem{definition}{Definition}
+\usepackage{chngcntr}
+
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+\newcommand{\qub}{QUBICON\textsuperscript{\textregistered}~} 

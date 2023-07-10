@@ -1,0 +1,100 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{viktoria_agricultural_2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=977b4e29b557d8a854f24c5496bf2d59}{%
+           family={Viktoria},
+           familyi={V\bibinitperiod},
+           given={Leitner},
+           giveni={L\bibinitperiod}}}%
+        {{hash=069a76315b887965e680a23f1eac01dc}{%
+           family={Gottfried},
+           familyi={G\bibinitperiod},
+           given={Aufischer},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c328adaa5e5a39b4fc85c436e33ace6e}{%
+           family={Pia},
+           familyi={P\bibinitperiod},
+           given={Solt-Rindler},
+           giveni={S\bibinithyphendelim R\bibinitperiod}}}%
+        {{hash=e944654517d32d5a06e7c187de5fd37c}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={Streffer},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7f106cad39c495b9b63739076f74721c}{%
+           family={Christoph},
+           familyi={C\bibinitperiod},
+           given={Gabler},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d9b29d3f7ae026c91de1845c75ca306e}{%
+           family={Jakob},
+           familyi={J\bibinitperiod},
+           given={Noack},
+           giveni={N\bibinitperiod}}}%
+        {{hash=91f3bc5a2dc6684cec6a0497b6c2fddf}{%
+           family={Hendrikus},
+           familyi={H\bibinitperiod},
+           given={Van\bibnamedelima Herwijnen},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=447ea5a253aa1ca7ec1e6117ceaddde8}{%
+           family={Paulik},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c23757918a5c5e54b5be6f6dee535fe1}
+      \strng{fullhash}{66ed80040392061b4fea82502a1551ef}
+      \strng{bibnamehash}{66ed80040392061b4fea82502a1551ef}
+      \strng{authorbibnamehash}{66ed80040392061b4fea82502a1551ef}
+      \strng{authornamehash}{c23757918a5c5e54b5be6f6dee535fe1}
+      \strng{authorfullhash}{66ed80040392061b4fea82502a1551ef}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2190-6815, 2190-6823}
+      \field{journaltitle}{Biomass Conversion and Biorefinery}
+      \field{month}{3}
+      \field{title}{Agricultural residue lignin from novel low-temperature pretreatment as potential raw material for {LPF} resins}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/s13399-023-04028-9
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s13399-023-04028-9
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s13399-023-04028-9
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
